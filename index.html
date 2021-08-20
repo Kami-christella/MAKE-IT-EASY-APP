@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Book Yours</title>
+</head>
+
+<body id="image">
+    <center>
+        <h1>BOOK YOURS</h1>
+    </center>
+    <form id="info" style="font-size: 30px;">
+        <label for="name" class="identity">
+            First Name: <input type="text" placeholder="write your name" id="name" name="firstN" required>
+        </label> <br> <br>
+        
+        <label for="Sname" class="identity">
+            Other Name: <input type="text" placeholder="write your second Name" id="Sname" name="secondN" required>
+        </label> <br> <br>
+        <label for="tel" class="identity">
+            Telephone: <input type="number" placeholder="write tel number" id="tel" name="tel" maxlength="10"  minlength="10" required>
+        </label> <br> <br>
+       <i> 
+            <h1 class="header2">CHOOSE AGENCY</h1></i>      
+    
+        <ul class="style" aria-required="true">
+            <label for="matunda">
+                <input type="radio" id="matunda" name="check" value="matunda Express" required>Matunda Express
+            </label> <br> <br>
+            <label for="stella">
+                <input type="radio" id="stella" name="check" value="stella Express">Stella Express
+            </label> <br> <br>
+            <label for="Volcano">
+                <input type="radio" id="Volcano" name="check" value="volcano Express">Volcano Express
+            </label> <br> <br>
+           
+        </ul>
+               <div class="style" aria-required="true">
+         <i><h1 id="header3"> Choose Car Park</h1></i>
+            <label for="Nyabugogo">
+                <input type="radio" id="Nyabugogo" name="book" value="Nyabugogo Park" required>Nyabugogo Car Park
+            </label> <br> <br>
+
+        <label for="kabuga">
+                <input type="radio" id="kabuga" name="book" value="kabuga Park">kabuga Car Park
+            </label> <br> <br>
+            <label for="Remera">
+                <input type="radio" id="Remera" name="book" value="Remera Park">Remera Car Park
+            </label> <br> <br>
+               </div>
+               <p id="worn"></p>
+        
+         <h1 class="header2"> DEPARTURE HOURS:</h1></i>
+         <ol class="style">
+            <label for="7am">
+                <input type="radio" id="7am" name="hours" value="7am" required>7:00-7:15
+            </label> <br> <br>
+            <label for="8am">
+                <input type="radio" id="8am" name="hours" value="8am">8:00-8:15
+            </label> <br> <br>
+            <label for="9am">
+                <input type="radio" id="9am" name="hours" value="9am">9:00-9:15
+            </label> <br> <br>
+         </ol>   
+
+         <h1 class="header2"> Destination With Payments:</h1></i>   
+         
+             <ol class="style">
+                <div>
+                    <label for="Kigali-Musanze">
+                        <input type="radio" id="Kigali-Musanze" name="pay" value="Kigali-Musanze" required>Kigali-Musanze &nbsp;&nbsp; <b>2200</b>
+                    </label> <br> <br>
+                    <label for="Kigali-Kibungo">
+                        <input type="radio" id="Kigali-Kibungo" name="pay" value="Kigali-Kibungo">Kigali-Kibungo &nbsp;&nbsp; <b>2000</b>
+                    </label> <br> <br>
+                    <label for="Kigali-Byumba">
+                        <input type="radio" id="Kigali-Byumba" name="pay" value="Kigali-Byumba">Kigali-Byumba &nbsp; &nbsp; <b>1900</b>
+                    </label> <br> <br>
+                </div>
+             </ol>
+             
+         <ul>
+        
+             <h1 class="header2"> Pay With:</h1></i>  
+      <ul class="style">
+          <label for="airtel">
+            <input type="radio" id="airtel" name="payment" value="airtel" required>  <span>Airtel Money</span>  <img src="image/airtel.png" alt="" class="images" style="float:left">     
+
+          </label>
+        <br> <br>
+        <label for="momo">
+            <input type="radio" id="momo" name="payment" value="momo">  <span>Mobile Money</span>  <img src="image/momo.png" alt="" style="float:left" class="images">
+        </label>
+      </ul>
+       
+       <a href="pay"><button id="button">Submit</button></a> 
+       <p id="para" style="font-size: 30px;"></p>
+    </form>
+    <script src=" https://unpkg.com/node-uuid@1.4.8/uuid.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/node-uuid@1.4.8/uuid.min.js produce uuidv4?"></script> -->
+    <!-- <script src="https://wzrd.in/standalone/uuid%2Fv4@latest"></script> -->
+    <script src="index.js"></script>
+
+   
+</body>
+
+</html>
